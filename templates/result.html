@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title> OCR Result </title>
+</head>
+<body>
+    <header>
+        <h1> OCR Result </h1>
+        <p> Extracted text from your uploaded image </p>
+    </header>
+    <main>
+        <div class="result-container">
+            <img src="{{ url_for('static', filename='uploads/' + image_path) }}" alt="Uploaded Image">
+            <h2>Extracted Text:</h2>
+            <textarea readonly class="result-text">{{ text }}</textarea>
+            <a href="/" class="back-button">Go Back</a>
+        </div>        
+    </main>
+    <footer>
+        <p>&copy; Optical Character Recognition </p>
+    </footer>
+</body>
+</html>

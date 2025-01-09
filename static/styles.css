@@ -1,0 +1,180 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.file-upload-label {
+    display: block;
+    background: #0083b0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.file-upload-label:hover {
+    background: #00b4db;
+}
+
+#file-upload {
+    display: none;
+}
+
+button {
+    background: #00b4db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0083b0;
+}
+
+footer {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .upload-container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Result Page Styling */
+.result-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.result-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.result-container h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #ffecb3;
+}
+
+.result-text {
+    width: 90%; /* Adjust width to fit the container */
+    height: 150px; /* Set height for better visibility */
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1.2rem; /* Increase font size for readability */
+    color: #000; /* Black text for better contrast */
+    background-color: #f0f8ff; /* Light blue background for visibility */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 5px;
+    overflow-y: auto; /* Allow scrolling for large text */
+    resize: none; /* Prevent resizing */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+
+
+.result-text p {
+    white-space: pre-wrap; /* Preserve line breaks */
+}
+
+.back-button {
+    display: inline-block;
+    background: #0083b0;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: #00b4db;
+}
+
